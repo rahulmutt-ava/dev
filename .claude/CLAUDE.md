@@ -18,22 +18,6 @@ passes CI on the first try.
 - **Build/dev tooling:** [Task](https://taskfile.dev) (`Taskfile.yml`), Nix
   (pinned toolchain), and Bazel (`bazelisk`) as an alternate build/test path.
 
-### Active work on this branch (`rahulmutt/saevm-todos`)
-
-The focus is **`vms/saevm/`** — the reference implementation of **SAE
-(Streaming Asynchronous Execution, [ACP-194](https://github.com/avalanche-foundation/ACPs/tree/main/ACPs/194-streaming-asynchronous-execution))**.
-Under active development, **no API-stability guarantees**. Key subpackages:
-
-- `sae/` — core SAE VM (block builder, consensus, p2p, recovery, RPC, health)
-- `cchain/` — the C-Chain VM built atop `sae.VM` (`state`, `tx`, `txpool`)
-- `blocks/` — SAE block definitions; `saexec/` — execution; `saedb/` — storage
-- `adaptor/` — exposes SAE as a Snowman `block.ChainVM`; `hook/` — block lifecycle hooks
-- `gastime/`, `gasprice/`, `proxytime/` — gas-as-time accounting & pricing
-- `txgossip/`, `intmath/`, `cmputils/`, `types/`, `params/`, `saetest/`, `docs/`
-
-> **Note:** `vms/saevm/` has a **stricter dedicated lint pass** (`lint-saevm`,
-> gosec G115). Hold this code to a higher bar. See `vms/saevm/docs/invariants.md`.
-
 ## Directory map (top level)
 
 | Dir | Purpose |
