@@ -35,7 +35,6 @@
     ]
   },
   "unsafe_macos_seatbelt_rules": [
-    "(allow iokit-get-properties)",
-    "(allow iokit-open)"
+    "(allow iokit-open (iokit-user-client-class \"RootDomainUserClient\"))"
   ]
 }
