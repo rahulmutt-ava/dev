@@ -24,7 +24,10 @@
     ],
     "read": [
       "$HOME/.nix-profile",
-      "$HOME/.config",
+      "$HOME/.config"
+    ],
+    "read_file": [
+      "$HOME/.bashrc",
       "$HOME/.bazelrc"
     ],
     "bypass_protection": [
