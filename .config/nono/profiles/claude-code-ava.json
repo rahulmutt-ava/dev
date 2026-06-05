@@ -20,12 +20,12 @@
       "/nixpkgs",
       "/nix",
       "/var/tmp",
-      "/private/var",
+      "/private/var"
     ],
     "read": [
       "$HOME/.nix-profile",
       "$HOME/.config",
-      "$HOME/.bazelrc",
+      "$HOME/.bazelrc"
     ],
     "bypass_protection": [
       "$HOME/.bashrc"
