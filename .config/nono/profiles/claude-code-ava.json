@@ -1,0 +1,38 @@
+{
+  "extends": "claude-code",
+  "meta": {
+    "name": "claude-code-ava"
+  },
+  "filesystem": {
+    "allow": [
+      ".",
+      "$HOME/.cache",
+      "$HOME/go",
+      "$HOME/.bazel",
+      "$HOME/.rustup",
+      "$HOME/.cargo",
+      "$HOME/.local/state/nix",
+      "$HOME/avalanchego",
+      "$HOME/.local/state/mise",
+      "$HOME/.local/share/mise",
+      "$HOME/.local/share/direnv",
+      "$HOME/Library/Caches",
+      "/nixpkgs",
+      "/nix",
+      "/var/tmp",
+      "/private/var",
+    ],
+    "read": [
+      "$HOME/.nix-profile",
+      "$HOME/.config",
+      "$HOME/.bazelrc",
+    ],
+    "bypass_protection": [
+      "$HOME/.bashrc"
+    ]
+  },
+  "unsafe_macos_seatbelt_rules": [
+    "(allow iokit-get-properties)",
+    "(allow iokit-open)"
+  ]
+}
