@@ -14,3 +14,9 @@ network_access = true
 
 [features]
 unified_exec = true
+
+[plugins."superpowers@openai-curated"]
+enabled = true
+
+[plugins."codex-security@openai-curated"]
+enabled = true
