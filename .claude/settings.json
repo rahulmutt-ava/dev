@@ -1,8 +1,12 @@
 {
-  "model": "opus[1m]",
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
   "permissions": {
     "defaultMode": "bypassPermissions"
   },
+  "model": "opus[1m]",
   "enabledPlugins": {
     "nono@always-further": true,
     "skill-creator@claude-plugins-official": true,
@@ -13,5 +17,10 @@
     "ralph-loop@claude-plugins-official": true
   },
   "skipDangerousModePermissionPrompt": true,
-  "theme": "dark"
+  "theme": "dark",
+  "showTurnDuration": true,
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline-command.sh"
+  }
 }
