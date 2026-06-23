@@ -15,8 +15,10 @@ network_access = true
 [features]
 unified_exec = true
 
-[plugins."superpowers@openai-curated"]
-enabled = true
+[marketplaces.superpowers-dev]
+last_updated = "2026-06-23T15:11:55Z"
+source_type = "git"
+source = "https://github.com/obra/superpowers.git"
 
-[plugins."codex-security@openai-curated"]
+[plugins."superpowers@superpowers-dev"]
 enabled = true
